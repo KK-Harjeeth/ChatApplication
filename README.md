@@ -3,17 +3,26 @@
 This project is a full-stack chat application with real-time messaging, user authentication, and integrated summarization for long messages using the Gemini API.
 
 ## Table of Contents
-1. [Project Structure](#project-structure)
-2. [Technologies Used](#technologies-used)
-3. [Unique Features](#unique-features)
-4. [Installation](#installation)
-5. [Backend](#backend)
+1. [Screenshots](#screenshots)
+2. [Project Structure](#project-structure)
+3. [Technologies Used](#technologies-used)
+4. [Unique Features](#unique-features)
+5. [Installation](#installation)
+6. [Backend](#backend)
    - [Environment Variables](#environment-variables)
    - [API Endpoints](#api-endpoints)
-6. [Frontend](#frontend)
-7. [Running the Application](#running-the-application)
+7. [Frontend](#frontend)
+8. [Running the Application](#running-the-application)
 
 ---
+## Screenshots
+<img width="1440" alt="Screenshot 2024-11-02 at 7 36 41 PM" src="https://github.com/user-attachments/assets/8b40e48f-5b4d-42fc-b56d-825b56bfa9de">
+&nbsp;
+<img width="1440" alt="Screenshot 2024-11-03 at 9 07 35 PM" src="https://github.com/user-attachments/assets/8aaa4dd5-c247-40e9-aa45-5ab85d1138cc">
+&nbsp;
+<img width="1440" alt="Screenshot 2024-11-03 at 9 07 46 PM" src="https://github.com/user-attachments/assets/1ec4e745-a874-4265-9d41-b65d2eeba19b">
+
+
 
 ## Project Structure
 

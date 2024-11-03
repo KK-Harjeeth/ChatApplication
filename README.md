@@ -1,16 +1,17 @@
 # Chat Application
 
-This project is a full-stack chat application that includes both backend and frontend components. It supports user login, real-time messaging, and user authentication.
+This project is a full-stack chat application with real-time messaging, user authentication, and integrated summarization for long messages using the Gemini API.
 
 ## Table of Contents
 1. [Project Structure](#project-structure)
 2. [Technologies Used](#technologies-used)
-3. [Installation](#installation)
-4. [Backend](#backend)
+3. [Unique Features](#unique-features)
+4. [Installation](#installation)
+5. [Backend](#backend)
    - [Environment Variables](#environment-variables)
    - [API Endpoints](#api-endpoints)
-5. [Frontend](#frontend)
-6. [Running the Application](#running-the-application)
+6. [Frontend](#frontend)
+7. [Running the Application](#running-the-application)
 
 ---
 
@@ -46,7 +47,12 @@ ChatApplication-main
 
 ## Technologies Used
 - **Backend**: Node.js, Express, MongoDB, JWT, Socket.IO
-- **Frontend**: React, Tailwind CSS, Socket.IO Client
+- **Frontend**: React, Tailwind CSS, Socket.IO Client, Gemini API
+
+## Unique Features
+
+- **Long Message Summarization**: Integrated with the Gemini API in the frontend to automatically summarize lengthy messages, making conversations more readable and manageable.
+  - **Dependency**: The Gemini API integration uses the `@google/generative-ai` library (version ^0.21.0).
 
 ## Installation
 

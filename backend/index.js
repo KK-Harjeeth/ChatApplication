@@ -9,8 +9,8 @@ import { app,server } from './SocketIO/server.js';
 app.use(express.json())
 app.use(cookieParser());
 app.use(cors(
-     origin: "https://chat-application-three-silk.vercel.app",
-     credentials: true
+     {origin: "https://chat-application-three-silk.vercel.app",
+     credentials: true}
 ));
 dotenv.config();
 const PORT = process.env.PORT || 4001;

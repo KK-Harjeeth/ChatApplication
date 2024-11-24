@@ -8,7 +8,7 @@ const useSendMessage = () => {
     setLoading(true);
     try {
       const res = await axios.post(
-        `/api/message/send/${selectedConversation._id}`,
+        `https://chatapplication-ivyf.onrender.com/api/message/send/${selectedConversation._id}`,
         { message }
       );
       console.log("In Use Send Message");

@@ -9,7 +9,7 @@ import { app,server } from './SocketIO/server.js';
 app.use(express.json())
 app.use(cookieParser());
 app.use(cors(
-     {origin: "https://chat-application-kmryptg4p-kk-harjeeths-projects.vercel.app",
+     {origin: "https://chat-application-ggrzo110d-kk-harjeeths-projects.vercel.app",
      credentials: true}
 ));
 dotenv.config();

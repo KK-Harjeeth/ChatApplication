@@ -16,7 +16,7 @@ const server = http.createServer(app);
 // Initializing a new instance of socket.io and attaching it to the HTTP server with CORS configurations
 const io = new Server(server, {
   cors: {
-    origin: "https://chatapplication-frontend-muc4.onrender.com", // Allowing requests from this origin
+    origin: "https://chatapplication-1-ide4.onrender.com", // Allowing requests from this origin
     methods: ["GET", "POST"], // Allowing only GET and POST requests through CORS
   },
 });

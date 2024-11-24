@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useAuth } from '../context/AuthProvider';
 import { Link } from 'react-router-dom';
-
+import Cookies from 'js-cookie';
 const Login = () => {
     const {authUser,setAuthUser} = useAuth();
   const [formData, setFormData] = useState({
@@ -43,6 +43,7 @@ const Login = () => {
           //   alert("Login successful!");
           // }
           localStorage.setItem("messenger", JSON.stringify(response.data));
+          Cookies.set("jwt", response.data.token, { expires: 7 });
           setAuthUser(response.data);
         })
         .catch((error) => {

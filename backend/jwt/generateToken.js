@@ -8,6 +8,7 @@ const createTokenAndSaveCookie=(userId,res)=>{
         httpOnly:true, // Helps mitigate XSS attacks
         secure:true // Ensures the cookie is sent over HTTPS
     })
+    return token;
 }
 
 export default createTokenAndSaveCookie;

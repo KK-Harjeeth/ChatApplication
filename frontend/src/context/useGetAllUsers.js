@@ -11,7 +11,7 @@ function useGetAllUsers() {
             setLoading(true);
             try {
                 const token = Cookies.get("jwt");
-                const response = await axios.get('/api/user/getUsersProfiles', {
+                const response = await axios.get('https://chatapplication-ivyf.onrender.com/api/user/getUsersProfiles', {
                     
                     credentials: "include",
                     headers: {

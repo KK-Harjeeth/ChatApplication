@@ -17,7 +17,7 @@ export const signUp = async (req, res) => {
     const newUser = await new User({ name, email, password: hashedPassword });
     await newUser.save();
     if (newUser) {
-      createTokenAndSaveCookie(newUser._id, res);
+      const token = createTokenAndSaveCookie(newUser._id, res);
       res.status(201).json({
         message: "User registered successfully!",
         user: {
@@ -25,6 +25,7 @@ export const signUp = async (req, res) => {
           name: newUser.name,
           email: newUser.email,
         },
+        token:token
       });
     }
   } catch (error) {

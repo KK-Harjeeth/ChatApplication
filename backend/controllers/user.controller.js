@@ -45,7 +45,7 @@ export const login = async (req, res) => {
     if (!isMatch) {
       return res.status(400).json({ message: "Invalid password" });
     }
-    createTokenAndSaveCookie(user._id, res);
+    const token = createTokenAndSaveCookie(user._id, res);
     res.status(201).json({
       message: "User logged in successfully!",
       user: {
@@ -53,6 +53,7 @@ export const login = async (req, res) => {
         name: user.name,
         email: user.email,
       },
+      token:token
     });
   } catch (error) {
     console.log(error);

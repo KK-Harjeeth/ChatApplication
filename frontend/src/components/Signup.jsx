@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useAuth } from '../context/AuthProvider';
 import { Link } from 'react-router-dom';
+import Cookies from 'js-cookie';
 function Signup() {
   const {authUser,setAuthUser}=useAuth();
   const [formData, setFormData] = useState({
@@ -58,6 +59,7 @@ function Signup() {
             alert("signup successful, you can login now!")
           }
           localStorage.setItem("messenger",JSON.stringify(response.data));
+          Cookies.set("jwt", response.data.token, { expires: 7 }); 
           setAuthUser(response.data);
         })
         .catch((error) => {

@@ -8,7 +8,10 @@ import cookieParser from 'cookie-parser';
 import { app,server } from './SocketIO/server.js';
 app.use(express.json())
 app.use(cookieParser());
-app.use(cors());
+app.use(cors(
+     origin: "https://chat-application-three-silk.vercel.app",
+    credentials: true,
+));
 dotenv.config();
 const PORT = process.env.PORT || 4001;
 const URI = process.env.MONGODB_URI;

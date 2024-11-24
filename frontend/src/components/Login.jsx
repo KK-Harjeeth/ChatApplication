@@ -36,7 +36,7 @@ const Login = () => {
     e.preventDefault();
     if (validate()) {
       axios
-        .post("/api/user/login", formData)
+        .post("https://chatapplication-ivyf.onrender.com/api/user/login", formData)
         .then((response) => {
           console.log(response.data);
           // if(response.data){

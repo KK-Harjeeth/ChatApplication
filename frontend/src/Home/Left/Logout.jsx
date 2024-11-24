@@ -12,7 +12,7 @@ function Logout() {
   const handleLogout = async () => {
     try {
       setLoading(true);
-      await axios.post('/api/user/logout');
+      await axios.post('https://chatapplication-ivyf.onrender.com/api/user/logout');
       localStorage.removeItem("messenger");
       Cookies.remove("jwt");
       setAuthUser(null); // Update authUser state

@@ -51,7 +51,7 @@ function Signup() {
       }
       console.log(userInfo)
       await axios
-        .post("/api/user/signup", userInfo)
+        .post("https://chatapplication-ivyf.onrender.com/api/user/signup", userInfo)
         .then((response) => {
           console.log(response.data);
           if(response.data){

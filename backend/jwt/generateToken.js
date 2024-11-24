@@ -6,8 +6,7 @@ const createTokenAndSaveCookie=(userId,res)=>{
     // Set the token as a cookie in the response
     res.cookie("jwt",token,{
         httpOnly:true, // Helps mitigate XSS attacks
-        secure:true, // Ensures the cookie is sent over HTTPS
-        sameSite:"strict" // Helps prevent CSRF attacks
+        secure:true // Ensures the cookie is sent over HTTPS
     })
 }
 

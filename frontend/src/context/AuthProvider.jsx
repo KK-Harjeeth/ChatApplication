@@ -2,7 +2,8 @@ import React, { createContext, useContext, useState } from 'react'
 import Cookies from 'js-cookie'
 export const AuthContext = createContext();
 export default function AuthProvider({children}) {
-    const initialUserState = Cookies.get("jwt") || localStorage.getItem("messenger");
+    const initialUserState = Cookies.get("jwt");
+    console.log(initialUserState);
     // parse the user data and storing in the state
     const [authUser, setAuthUser] = useState(initialUserState?JSON.parse(initialUserState):undefined);
   return (

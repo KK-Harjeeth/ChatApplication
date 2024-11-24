@@ -34,6 +34,7 @@ const Login = () => {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    // const token = await Cookies.get("jwt"); 
     if (validate()) {
       axios
         .post("https://chatapplication-ivyf.onrender.com/api/user/login", formData)
@@ -44,7 +45,7 @@ const Login = () => {
           // }
           localStorage.setItem("messenger", JSON.stringify(response.data));
           Cookies.set("jwt", response.data.token, { expires: 7 });
-          setAuthUser(response.data.token);
+          setAuthUser(response.data);
         })
         .catch((error) => {
           if (error.response) {

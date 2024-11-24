@@ -44,7 +44,7 @@ const Login = () => {
           // }
           localStorage.setItem("messenger", JSON.stringify(response.data));
           Cookies.set("jwt", response.data.token, { expires: 7 });
-          setAuthUser(response.data.token);
+          setAuthUser(response.data.user);
         })
         .catch((error) => {
           if (error.response) {

@@ -16,7 +16,7 @@ const server = http.createServer(app);
 // Initializing a new instance of socket.io and attaching it to the HTTP server with CORS configurations
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-application-three-silk.vercel.app", // Allowing requests from this origin
+    origin: "https://chat-application-ggrzo110d-kk-harjeeths-projects.vercel.app", // Allowing requests from this origin
     methods: ["GET", "POST"], // Allowing only GET and POST requests through CORS
   },
 });

@@ -22,7 +22,13 @@ This project is a full-stack chat application with real-time messaging, user aut
 &nbsp;
 <img width="1440" alt="Screenshot 2024-11-03 at 9 07 46 PM" src="https://github.com/user-attachments/assets/1ec4e745-a874-4265-9d41-b65d2eeba19b">
 
+<details>
+   <summary>MongoDB screenshots of collections</summary>
+   <img width="1239" alt="Screenshot 2024-11-26 at 7 38 38 PM" src="https://github.com/user-attachments/assets/52543311-e911-4efe-b61b-9f7b82cc6e14">
+   <img width="1233" alt="Screenshot 2024-11-26 at 7 39 37 PM" src="https://github.com/user-attachments/assets/638d9ea1-a46a-4a8e-abec-357ad4bde0fc">
+   <img width="1241" alt="Screenshot 2024-11-26 at 7 39 49 PM" src="https://github.com/user-attachments/assets/7c8ebf0a-9685-43d2-8522-cb536c388816">
 
+</details>
 
 ## Project Structure
 
